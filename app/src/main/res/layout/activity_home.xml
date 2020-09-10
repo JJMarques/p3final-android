@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeActivity">
+
+    <TextView
+        android:id="@+id/greetings"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="19sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.086" />
+
+    <Button
+        android:id="@+id/btnRefeicoes"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:background="@drawable/custom_rounded_corners"
+        android:backgroundTint="@color/colorRefeicao"
+        android:drawableTop="@drawable/icon_map_restaurant"
+        android:drawablePadding="20dp"
+        android:onClick="goRefeicoes"
+        android:text="@string/btnRefeicoes"
+        android:textColor="@color/colorRefeicaoText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/greetings" />
+
+    <Button
+        android:id="@+id/btnSaude"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/custom_rounded_corners"
+        android:backgroundTint="@color/colorSaude"
+        android:drawableTop="@drawable/icon_awesome_heart"
+        android:drawablePadding="20dp"
+        android:drawableTint="@color/colorSaudeText"
+        android:fontFamily="@font/comfortaa_bold"
+        android:onClick="goSaude"
+        android:pointerIcon="context_menu"
+        android:text="@string/btnSaude"
+        android:textColor="@color/colorSaudeText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnRefeicoes" />
+
+    <Button
+        android:id="@+id/btnAtividades"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/custom_rounded_corners"
+        android:backgroundTint="@color/colorAtividades"
+        android:drawableTop="@drawable/icon_awesome_calendar_alt"
+        android:drawablePadding="20dp"
+        android:drawableTint="@color/colorAtividadesText"
+        android:fontFamily="@font/comfortaa_bold"
+        android:onClick="goAtividades"
+        android:pointerIcon="context_menu"
+        android:text="@string/btnAtividades"
+        android:textColor="@color/colorAtividadesText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnSaude" />
+
+    <ImageView
+        android:id="@+id/btnLogout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:contentDescription="@string/btnLogout"
+        android:onClick="logOut"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnAtividades"
+        app:srcCompat="@drawable/icon_logout" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

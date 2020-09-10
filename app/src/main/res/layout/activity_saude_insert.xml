@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SaudeInsertActivity">
+
+    <Button
+        android:id="@+id/btnRemoveSaude"
+        android:layout_width="132dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="84dp"
+        android:background="@drawable/custom_rounded_corners"
+        android:backgroundTint="@android:color/holo_red_dark"
+        android:drawableStart="@android:drawable/btn_dialog"
+        android:drawableTint="@android:color/holo_red_light"
+        android:fontFamily="@font/comfortaa_bold"
+        android:onClick="removeSaude"
+        android:text="@string/btnApagar"
+        android:textColor="@color/colorBackground"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.788"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etDoenca" />
+
+    <Button
+        android:id="@+id/btnEditSaude"
+        android:layout_width="132dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="84dp"
+        android:background="@drawable/custom_rounded_corners"
+        android:backgroundTint="@color/colorRefeicao"
+        android:drawableStart="@drawable/icon_awesome_save"
+        android:drawableTint="@color/colorRefeicaoText"
+        android:fontFamily="@font/comfortaa_bold"
+        android:onClick="editSaude"
+        android:text="@string/btnSave"
+        android:textColor="@color/colorRefeicaoText"
+        app:layout_constraintEnd_toStartOf="@+id/btnRemoveSaude"
+        app:layout_constraintHorizontal_bias="0.67"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etDoenca" />
+
+    <Button
+        android:id="@+id/btnInsertSaude"
+        android:layout_width="132dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="84dp"
+        android:background="@drawable/custom_rounded_corners"
+        android:backgroundTint="@color/colorRefeicao"
+        android:drawableStart="@drawable/icon_awesome_save"
+        android:drawableTint="@color/colorRefeicaoText"
+        android:fontFamily="@font/comfortaa_bold"
+        android:onClick="insertSaude"
+        android:text="@string/btnSave"
+        android:textColor="@color/colorRefeicaoText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etDoenca" />
+
+    <TextView
+        android:id="@+id/tvNomeAluno2"
+        android:layout_width="330dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvSaude3" />
+
+    <TextView
+        android:id="@+id/tvSaude3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="@string/tvSaude"
+        android:textColor="@color/colorSaudeText"
+        android:textSize="35sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/etSesta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:ems="10"
+        android:hint="@string/tvSaudeSesta"
+        android:inputType="textPersonName"
+        android:textAlignment="center"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvNomeAluno2" />
+
+    <EditText
+        android:id="@+id/etMiccao"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:hint="@string/tvSaudeMiccao"
+        android:inputType="textPersonName"
+        android:textAlignment="center"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etSesta"
+        android:autofillHints="" />
+
+    <EditText
+        android:id="@+id/etDefecacao"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:hint="@string/tvSaudeDefecacao"
+        android:inputType="textPersonName"
+        android:textAlignment="center"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etMiccao" />
+
+    <EditText
+        android:id="@+id/etDoenca"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:hint="@string/tvSaudeDoenca"
+        android:inputType="textPersonName"
+        android:textAlignment="center"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etDefecacao" />
+
+    <EditText
+        android:id="@+id/etSintomas"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:hint="MEDICAÇÃO"
+        android:inputType="textPersonName"
+        android:textAlignment="center"
+        android:textSize="12sp"
+        app:layout_constraintStart_toEndOf="@+id/etMedicacao"
+        app:layout_constraintTop_toBottomOf="@+id/etDoenca" />
+
+    <EditText
+        android:id="@+id/etMedicacao"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:hint="SINTOMAS"
+        android:inputType="textPersonName"
+        android:textAlignment="center"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etDoenca" />
+
+    <EditText
+        android:id="@+id/etDose"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:hint="DOSE(G)"
+        android:inputType="number"
+        android:text="0"
+        android:textAlignment="center"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/etSintomas"
+        app:layout_constraintTop_toBottomOf="@+id/etDoenca" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

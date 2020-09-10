@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AtividadesAdminActivity">
+
+    <ListView
+        android:id="@+id/listAtividades"
+        android:layout_width="376dp"
+        android:layout_height="193dp"
+        android:layout_marginTop="24dp"
+        android:alpha="0.8"
+        android:background="@drawable/custom_rounded_corners"
+        android:backgroundTint="@color/colorAtividades"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvAtividadesDescription2" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="@string/tvAtividades"
+        android:textColor="@color/colorAtividadesText"
+        android:textSize="35sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvAtividadesDescription2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="@string/tvAtividadesDescription"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+    <EditText
+        android:id="@+id/etNomeAtividade"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:hint="Nome da atividade"
+        android:inputType="textPersonName"
+        android:textAlignment="center"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/listAtividades" />
+
+    <Button
+        android:id="@+id/show_dialog"
+        android:layout_width="210dp"
+        android:layout_height="38dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/custom_rounded_corners"
+        android:backgroundTint="#CFD5CF"
+        android:text="@string/TvDatePick"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etSala" />
+
+    <EditText
+        android:id="@+id/etSala"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:hint="Salas"
+        android:inputType="textPersonName"
+        android:textAlignment="center"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etNomeAtividade" />
+
+    <Button
+        android:id="@+id/btnInsertSaude"
+        android:layout_width="132dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="36dp"
+        android:background="@drawable/custom_rounded_corners"
+        android:backgroundTint="@color/colorAtividades"
+        android:drawableStart="@drawable/icon_awesome_save"
+        android:drawableTint="@color/colorAtividadesText"
+        android:fontFamily="@font/comfortaa_bold"
+        android:onClick="insertAtividade"
+        android:text="Submeter"
+        android:textColor="@color/colorAtividadesText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/show_dialog" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

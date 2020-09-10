@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#E8E8E8</color>
+    <color name="colorPrimaryDark">#00355E</color>
+    <color name="colorAccent">#00355E</color>
+    <color name="colorWhite">#E8E8E8</color>
+    <color name="colorRefeicao">#FFE0B1</color>
+        <color name="colorRefeicaoText">#A4652E</color>
+    <color name="colorSaude">#C0DDE9</color>
+        <color name="colorSaudeText">#456097</color>
+    <color name="colorAtividades">#C8E2C3</color>
+    <color name="colorAtividadesText">#47714A</color>
+    <color name="colorPerfil">#E2C3C3</color>
+    <color name="colorBackground">#F3F3F3</color>
+</resources>

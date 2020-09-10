@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">Creches +</string>
+    <string name="welcomeMessage">Bem-vindo ao Creches +</string>
+    <string name="BtnLogin">Entrar</string>
+    <string name="btnRefeicoes">Refeições</string>
+    <string name="btnSaude">Saúde</string>
+    <string name="btnAtividades">Atividades</string>
+    <string name="tvRefeicoes">Refeições</string>
+    <string name="tvRefeicoesDescription">Dados das refeições de hoje</string>
+    <string name="tvRefeicaoManha">MANHÃ</string>
+    <string name="tvRefeicaoAlmoco">ALMOÇO</string>
+    <string name="tvRefeicaoTarde">TARDE</string>
+    <string name="tvSaude">Saúde</string>
+    <string name="tvSaudeDescription">Dados de saúde de hoje</string>
+    <string name="tvSaudeSesta">SESTA</string>
+    <string name="tvSaudeMiccao">MICÇÃO</string>
+    <string name="tvSaudeDefecacao">DEFECAÇÃO</string>
+    <string name="tvSaudeDoenca">DOENÇA</string>
+    <string name="tvAtividades">Atividades</string>
+    <string name="tvAtividadesDescription">As próximas atividades da creche</string>
+    <string name="btnLogout">Logout</string>
+    <string name="tvRefeicaoInsertDescription">Clique no nome do aluno para inserir os dados das refeições de hoje.</string>
+    <string name="tvInsertRefeicaoManha">Refeição da manhã</string>
+    <string name="tvRefeicaoInsertAlmoco">Refeição do almoço</string>
+    <string name="tvRefeicaoInsertTarde">Refeição da tarde</string>
+    <string name="btnSave">Guardar</string>
+    <string name="btnApagar">Apagar</string>
+    <string name="tvSaudeInsertDescription">Clique no nome do aluno para inserir os dados de saúde do dia de hoje.</string>
+    <string name="tvDatePicker">Clique para escolher uma data</string>
+    <string name="TvDatePick">Escolher data</string>
+</resources>

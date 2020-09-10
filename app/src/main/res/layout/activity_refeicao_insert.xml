@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RefeicaoInsertActivity">
+
+    <TextView
+        android:id="@+id/tvRefeicoes2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="@string/tvRefeicoes"
+        android:textColor="@color/colorRefeicaoText"
+        android:textSize="35sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvNomeAluno"
+        android:layout_width="330dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvRefeicoes2" />
+
+    <EditText
+        android:id="@+id/refeicaomanha"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:autofillHints="comeu bem"
+        android:ems="10"
+        android:hint="@string/tvInsertRefeicaoManha"
+        android:inputType="textPersonName"
+        android:textAlignment="center"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvNomeAluno" />
+
+    <EditText
+        android:id="@+id/refeicaoalmoco"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="44dp"
+        android:autofillHints="comeu bem"
+        android:ems="10"
+        android:hint="@string/tvRefeicaoInsertAlmoco"
+        android:inputType="textPersonName"
+        android:textAlignment="center"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/refeicaomanha" />
+
+    <EditText
+        android:id="@+id/refeicaotarde"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="44dp"
+        android:ems="10"
+        android:hint="@string/tvRefeicaoInsertTarde"
+        android:inputType="textPersonName"
+        android:textAlignment="center"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/refeicaoalmoco" />
+
+    <Button
+        android:id="@+id/btnInsertRefeicao"
+        android:layout_width="132dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="36dp"
+        android:background="@drawable/custom_rounded_corners"
+        android:backgroundTint="@color/colorRefeicao"
+        android:drawableStart="@drawable/icon_awesome_save"
+        android:drawableTint="@color/colorRefeicaoText"
+        android:fontFamily="@font/comfortaa_bold"
+        android:onClick="insertRefeicao"
+        android:text="@string/btnSave"
+        android:textColor="@color/colorRefeicaoText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/refeicaotarde" />
+
+    <Button
+        android:id="@+id/btnEditRefeicao"
+        android:layout_width="132dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/custom_rounded_corners"
+        android:backgroundTint="@color/colorRefeicao"
+        android:drawableStart="@drawable/icon_awesome_save"
+        android:drawableTint="@color/colorRefeicaoText"
+        android:fontFamily="@font/comfortaa_bold"
+        android:onClick="editRefeicao"
+        android:text="@string/btnSave"
+        android:textColor="@color/colorRefeicaoText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnInsertRefeicao" />
+
+    <Button
+        android:id="@+id/btnRemoveRefeicao"
+        android:layout_width="132dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/custom_rounded_corners"
+        android:backgroundTint="@android:color/holo_red_dark"
+        android:drawableStart="@android:drawable/btn_dialog"
+        android:drawableTint="@android:color/holo_red_light"
+        android:fontFamily="@font/comfortaa_bold"
+        android:onClick="removeRefeicao"
+        android:text="@string/btnApagar"
+        android:textColor="@color/colorBackground"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnEditRefeicao" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
